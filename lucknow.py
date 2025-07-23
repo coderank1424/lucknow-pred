@@ -13,7 +13,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 @st.cache_data
 def load_data():
-    df = pd.read_csv("lucknow.csv") 
+    df = pd.read_csv("lucknow_hosuing_prices - Main File.csv") 
      # replace with your file path
     df['carpet_area']=pd.to_numeric(df['carpet_area'], errors='coerce')
     si=SimpleImputer(missing_values=np.nan, strategy='mean')
